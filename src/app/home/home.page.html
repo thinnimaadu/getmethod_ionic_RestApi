@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+<ion-list>
+  <ion-item *ngFor="let data of datauser">
+    <ion-thumbnail>
+      <img src="{{data.picture.thumbnail}}">
+    </ion-thumbnail>
+    <ion-label>
+      <h3 ion-text color="primary">{{data.name.title}},{{data.name.first}} {{data.name.last}}</h3>
+      <p>email : {{data.email}}</p>
+      <p>address : {{data.location.city}} {{data.location.country}}</p>
+    </ion-label>
+    
+
+  </ion-item>
+</ion-list>
+</ion-content>

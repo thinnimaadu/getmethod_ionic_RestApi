@@ -1,0 +1,7 @@
+{
+  "name": "getmethodrestapi",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
